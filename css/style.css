@@ -59,7 +59,7 @@ a {
 
 }
 /* Desktop */
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .section {
     padding: 120px 0px;
   }
@@ -105,7 +105,7 @@ a {
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .logo {
    margin-right: 76px;
   }
@@ -129,7 +129,7 @@ padding: 96px 0;
 background-color: #2e2f42;
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
 .footer {
  padding: 100px 0;
 }
@@ -194,7 +194,7 @@ background: #404BBF;
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .addres-list {
     flex-direction: row;
       align-items: center;
@@ -232,12 +232,19 @@ background: #404BBF;
   color:#ffffff;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 @media only screen and (min-width:768px) {
   .main-title {
     font-size: 56px;
+    margin-bottom: 36px;
+  }
+}
+
+@media only  screen and (min-width:1158px) {
+  .main-title {
+    margin-bottom: 48px;
   }
 }
 
@@ -273,7 +280,7 @@ background: #404BBF;
   padding-top: 0;
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1158px) {
   .work {
     display: none;
   }
@@ -300,7 +307,7 @@ font-weight: 700;
   color: #2e2f42;
 }
 
-@media only screen and (min-width:1200) {
+@media only screen and (min-width:1158) {
   .section-subtitle {
     font-weight: 500;
       font-size: 20px;
@@ -318,7 +325,7 @@ font-weight: 700;
  
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .section-text {
   font-weight: 400;
   font-size: 16px;
@@ -337,21 +344,28 @@ font-weight: 700;
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 24px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 48px;
-  max-width: 263px;
+  
+  width: 263px;
 }
 
 @media only screen and (min-width:768px) {
   .flter-list {
+    width: 583px;
     margin-bottom: 64px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .flter-list {
     margin-bottom: 72px;
+    
   }
 }
 
@@ -420,10 +434,9 @@ font-weight: 700;
 
 /* DESKTOP SKREEN */
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 1128px;
   }
 }
 
@@ -457,7 +470,7 @@ text-align: center;
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .text-about-us {
   width: 264px;
 }
@@ -497,6 +510,13 @@ text-align: center;
   row-gap: 72px;
   column-gap: 24px;
 
+}
+
+@media only screen and (min-width:1158px) {
+  .card-list {
+    flex-wrap: nowrap;
+    
+  }
 }
 
 .card-list-item {
@@ -575,7 +595,7 @@ text-align: center;
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .card-portfolio {
     width: 360px;
   }
@@ -596,14 +616,49 @@ text-align: center;
 .first-sec {
   padding: 188px 0;
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_mobile1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   height: 600px;
   margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .first-sec {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_mobile2x.jpg);
+    }
+}
+
+@media only screen and (min-width:428px) {
+  .first-sec {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_tablet1x.jpg);
+  }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .first-sec {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_tablet2x.jpg);
+      }
+    }
+}
+
+@media only screen and (min-width:768px) {
+  .first-sec {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_desk1x.jpg);
+  }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .first-sec {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_desk2x.jpg);
+      }
+    }
+}
+
 
 .nav-list {
   display: flex;
@@ -651,9 +706,10 @@ fill: rgba(244, 244, 253, 1);
   display: none;
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .aboutus-card {
     display: flex;
+    gap: 24px;
       justify-content: center;
       align-items: center;
       width: 264px;
@@ -712,7 +768,7 @@ fill: currentColor;
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .footer-section {
     flex-wrap: nowrap;
     column-gap: 0px;
@@ -761,7 +817,7 @@ transition-property: background-color;
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .left-footer {
     margin-right: 120px;
   }
@@ -1091,7 +1147,7 @@ fill: #ffffff;
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .subscribe_form {
     margin-left: 80px;
   }
@@ -1131,7 +1187,7 @@ width: 264px;
   }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1158px) {
   .sub-space {
    align-items: flex-end;
   }
@@ -1141,14 +1197,14 @@ width: 264px;
   display: flex;
   gap: 16px;
   flex-direction: column;
-  
+  color: white;
 }
 
 .subscribe_email {
   width: 264px;
   height: 40px;
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid  #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 8px 212px 8px 12px;
